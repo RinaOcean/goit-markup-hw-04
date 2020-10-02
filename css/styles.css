@@ -166,11 +166,32 @@ h3 {
 }
 
 .address-list-link {
-  display: block;
+  display: flex;
+  align-items: center;
 }
 
 .link-current {
   color: var(--accent-color);
+}
+
+.contacts-icon {
+  margin-right: 10px;
+  fill: var(--main-text-color);
+}
+
+.phone-icon {
+  width: 10px;
+  height: 16px;
+}
+
+.mail-icon {
+  width: 16px;
+  height: 12px;
+}
+
+.contacts-icon:hover,
+.contacts-icon:focus {
+  fill: var(--accent-color);
 }
 
 /* ============ END HEADER ============ */
@@ -182,6 +203,11 @@ h3 {
   padding-bottom: 200px;
   background-color: #2f303a;
   text-align: center;
+
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/Img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .hero-title {
@@ -229,6 +255,35 @@ h3 {
 
 .advantages-list-item {
   width: 270px;
+}
+
+.advantages-list-title::before {
+  content: "";
+  display: block;
+
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+
+  border-radius: 4px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.details::before {
+  background-image: url("../images/Advantages/antenna.svg"), linear-gradient(#f5f4fa, #f5f4fa);
+}
+
+.punctuality::before {
+  background-image: url("../images/Advantages/clock.svg"), linear-gradient(#f5f4fa, #f5f4fa);
+}
+
+.planning::before {
+  background-image: url("../images/Advantages/diagram.svg"), linear-gradient(#f5f4fa, #f5f4fa);
+}
+
+.technologies::before {
+  background-image: url("../images/Advantages/astronaut.svg"), linear-gradient(#f5f4fa, #f5f4fa);
 }
 
 /* ============ END ADVANTAGES ============ */
