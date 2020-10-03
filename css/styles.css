@@ -364,7 +364,7 @@ h3 {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  margin: 0auto;
+  margin: 0 auto;
   color: var(--icons-color);
 }
 
