@@ -178,7 +178,7 @@ h3 {
 
 .contacts-icon {
   margin-right: 10px;
-  fill: var(--main-text-color);
+  fill: currentColor;
 }
 
 .phone-icon {
@@ -189,11 +189,6 @@ h3 {
 .mail-icon {
   width: 16px;
   height: 12px;
-}
-
-.contacts-icon:hover,
-.contacts-icon:focus {
-  fill: var(--accent-color);
 }
 
 /* ============ END HEADER ============ */
@@ -359,12 +354,7 @@ h3 {
 .social-media-icons {
   width: 20px;
   height: 20px;
-  fill: var(--icons-color);
-}
-
-.social-media-icons:hover,
-.social-media-icons:focus {
-  fill: var(--dark-theme-color);
+  fill: currentColor;
 }
 
 .social-media-link {
@@ -375,6 +365,7 @@ h3 {
   height: 44px;
   border-radius: 50%;
   margin: 0auto;
+  color: var(--icons-color);
 }
 
 .social-media-link:hover,
@@ -382,7 +373,7 @@ h3 {
   width: 44px;
   height: 44px;
   background-color: var(--accent-color);
-  border-radius: 50%;
+  color: var(--dark-theme-color);
 }
 
 /* ============ END TEAM ============ */
@@ -400,15 +391,6 @@ h3 {
   justify-content: space-between;
   margin: 0 auto;
   margin-top: 50px;
-}
-
-.clients-logo {
-  fill: var(--icons-color);
-}
-
-.clients-logo:hover,
-.clients-logo:focus {
-  fill: var(--accent-color);
 }
 
 .logo-1 {
@@ -448,12 +430,18 @@ h3 {
   width: 170px;
   height: 90px;
   border: 1px solid var(--icons-color);
+  color: var(--icons-color);
   border-radius: 4px;
 }
 
 .clients-list-link:hover,
 .clients-list-link:focus {
   border: 1px solid var(--accent-color);
+  color: var(--accent-color);
+}
+
+.clients-logo {
+  fill: currentColor;
 }
 
 /* ============ END CLIENTS ============ */
@@ -464,6 +452,10 @@ h3 {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #2f303a;
+}
+
+.footer .container {
+  display: flex;
 }
 
 .logo-studio-light {
@@ -491,6 +483,47 @@ h3 {
 
 .footer .address-list-item:not(:first-child) {
   margin-top: 9px;
+}
+
+.footer .title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.03em;
+  color: var(--dark-theme-color);
+  text-align: start;
+}
+
+.social {
+  padding-top: 12px;
+  margin-left: 70px;
+}
+
+.footer .social-media {
+  width: 100%;
+  height: 44px;
+  margin-top: 20px;
+}
+
+.footer .social-media-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer .social-media-item + .social-media-item {
+  margin-left: 10px;
+}
+
+.footer .social-media-link:hover,
+.footer .social-media-link:focus {
+  background-color: var(--accent-color);
+}
+
+.footer .social-media-icons {
+  fill: var(--dark-theme-color);
 }
 
 /* ============ END FOOTER ============ */
