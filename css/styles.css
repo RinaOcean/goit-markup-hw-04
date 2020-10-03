@@ -7,6 +7,7 @@
   --dark-theme-secondary-color: rgba(255, 255, 255, 0.6);
   --dark-logo-color: #000000;
   --accent-color: #2196f3;
+  --social-icons-color: #afb1b8;
 }
 
 *,
@@ -37,6 +38,7 @@ body {
 
 .link {
   text-decoration: none;
+  display: block;
 }
 
 .container {
@@ -334,6 +336,7 @@ h3 {
   line-height: 1.188;
   letter-spacing: 0.03em;
   margin-top: 10px;
+  margin-bottom: 16px;
 }
 
 .staff-list-item {
@@ -341,6 +344,43 @@ h3 {
   padding-bottom: 30px;
   background-color: var(--dark-theme-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.social-media {
+  width: 206px;
+  height: 44px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 0 auto;
+}
+
+.social-media-icons {
+  margin-top: 12px;
+  width: 20px;
+  height: 20px;
+  fill: var(--social-icons-color);
+}
+
+.social-media-icons:hover,
+.social-media-icons:focus {
+  fill: var(--dark-theme-color);
+}
+
+.social-media-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  margin: 0auto;
+}
+
+.social-media-link:hover,
+.social-media-link:focus {
+  width: 44px;
+  height: 44px;
+  background-color: var(--accent-color);
+  border-radius: 50%;
 }
 
 /* ============ END TEAM ============ */
